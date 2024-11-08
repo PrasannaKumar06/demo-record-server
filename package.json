@@ -4,28 +4,23 @@
   "description": "A simple records system using MongoDB, Express.js, React.js, and Node.js with real-time CRUD operations using Socket.io",
   "main": "server.js",
   "scripts": {
-    "start": "node --env-file='.env' server",
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cefjoeii/mern-crud.git"
+    "url": "git+https://github.com/Safwan-Mohammed/Record-System-Server"
   },
   "keywords": [],
-  "author": "Ceferino Jose II",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cefjoeii/mern-crud/issues"
-  },
-  "homepage": "https://github.com/cefjoeii/mern-crud#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "express-rate-limit": "^6.9.0",
     "mongoose": "^7.5.0",
     "mongoose-unique-validator": "^4.0.0",
     "mongoose-validator": "^2.1.0",
+    "nodemon": "^3.1.7",
     "socket.io": "^4.8.0",
     "string-capitalize-name": "^1.0.3"
   }
