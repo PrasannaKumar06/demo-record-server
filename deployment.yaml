@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deploy
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: cloud-backend
+  template:
+    metadata:
+      labels:
+        app: cloud-backend
+    spec:
+      containers:
+        - name: cloud-backend
+          image: registry.digitalocean.com/cloud-aat/backend:1.0.1
+          ports:
+          - containerPort: 8000
